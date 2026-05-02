@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Fab from "../components/Fab";
+import MobileNav from "../components/MobileNav";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <Fab />
+      <MobileNav />
     </>
   );
 }

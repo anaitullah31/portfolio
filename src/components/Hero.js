@@ -72,28 +72,28 @@ export default function Hero() {
         <div className="md:col-span-4 flex flex-col items-start gap-md">
           <div className="space-y-sm">
             <h1 className="font-h1 text-h1 text-on-background leading-[1.1] hero-text">
-              Hi, I'm <br />
-              <span className="text-primary-container text-glow">Anait Ullah</span>
+              Hi, I&apos;m <br />
+              <span className="text-primary text-glow">Anait Ullah</span>
             </h1>
             <p className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hero-text">
               Creative Technologist
             </p>
           </div>
           <div className="mt-md hero-element">
-            <button className="group flex items-center gap-base bg-primary-container text-on-primary-container px-md py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
+            <button className="group flex items-center gap-base bg-primary text-on-primary px-md py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
               Hire Me
               <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </button>
           </div>
           <div className="mt-xl flex flex-col gap-sm hero-element">
             <div className="flex gap-md text-on-surface-variant">
-              <a className="hover:text-primary-container transition-colors" href="#">
+              <a className="hover:text-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">public</span>
               </a>
-              <a className="hover:text-primary-container transition-colors" href="#">
+              <a className="hover:text-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">share</span>
               </a>
-              <a className="hover:text-primary-container transition-colors" href="#">
+              <a className="hover:text-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">link</span>
               </a>
             </div>
@@ -104,9 +104,9 @@ export default function Hero() {
         </div>
         {/* Central Focal Point */}
         <div className="md:col-span-4 relative flex justify-center hero-image">
-          <div className="relative w-full aspect-[4/5] max-w-[450px]">
+          <div className="relative w-full aspect-4/5 max-w-112.5">
             {/* Floating Circles */}
-            <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full border border-primary-container/30 z-20"></div>
+            <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full border border-primary/30 z-20"></div>
             <div className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full glass-card z-20"></div>
             {/* Main Image Container */}
             <div className="w-full h-full rounded-2xl overflow-hidden glass-card relative">
@@ -119,7 +119,7 @@ export default function Hero() {
                 priority
               />
               {/* Star Badge Overlay */}
-              <div className="absolute top-8 right-8 bg-primary-container text-on-primary-container w-16 h-16 rounded-full flex items-center justify-center rotate-12 shadow-xl">
+              <div className="absolute top-8 right-8 bg-primary text-on-primary w-16 h-16 rounded-full flex items-center justify-center rotate-12 shadow-xl">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>star</span>
               </div>
             </div>
@@ -127,15 +127,15 @@ export default function Hero() {
         </div>
         {/* Right Column */}
         <div className="md:col-span-4 flex flex-col items-start md:items-end text-left md:text-right gap-md hero-element">
-          <div className="glass-card p-md rounded-xl max-w-[24rem]">
-            <span className="font-label-caps text-primary-container mb-base block uppercase">Expert on...</span>
+          <div className="glass-card p-md rounded-xl max-w-96">
+            <span className="font-label-caps text-primary mb-base block uppercase">Expert on...</span>
             <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
               Crafting high-end digital experiences at the intersection of aesthetic precision and technical innovation.
             </p>
           </div>
           <div className="mt-md">
-            <a className="flex items-center gap-base text-on-background hover:text-primary-container transition-all group" href="#">
-              <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary-container pb-1">Download CV</span>
+            <a className="flex items-center gap-base text-on-background hover:text-primary transition-all group" href="#">
+              <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary pb-1">Download CV</span>
               <span className="material-symbols-outlined text-sm">download</span>
             </a>
           </div>

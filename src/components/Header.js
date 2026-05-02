@@ -40,18 +40,29 @@ export default function Header() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md shadow-2xl"
+      className="hidden md:block fixed top-0 w-full z-50 border-b border-white/5 bg-background/80 backdrop-blur-md shadow-2xl"
     >
-      <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto font-sans tracking-tight">
+      <div className="flex justify-between items-center py-4 max-w-7xl mx-auto font-sans tracking-tight">
         <div className="text-xl font-bold tracking-tighter text-on-background uppercase">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={45}
-            height={45}
-            className="w-full h-full object-cover dark:grayscale dark:contrast-125"
-            priority
-          />
+          {theme === "dark" ? (
+            <Image
+              src="/logo-light.png"
+              alt="logo"
+              width={70}
+              height={45}
+              className="w-full h-full object-cover dark:grayscale dark:contrast-125"
+              priority
+            />
+          ) : (
+            <Image
+              src="/logo-light.png"
+              alt="logo"
+              width={70}
+              height={45}
+              className="w-full h-full object-cover dark:grayscale dark:contrast-125"
+              priority
+            />
+          )}
         </div>
         <nav className="hidden md:flex gap-8 items-center">
           {links.map((link) => (
@@ -68,19 +79,15 @@ export default function Header() {
         <div className="flex items-center gap-4">
           {mounted && (
             <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="w-10 h-10 rounded-full border border-outline/20 flex items-center justify-center hover:bg-surface-container transition-colors text-on-surface"
               aria-label="Toggle Theme"
             >
               <span className="material-symbols-outlined text-[18px]">
-                {theme === 'dark' ? 'light_mode' : 'dark_mode'}
+                {theme === "dark" ? "light_mode" : "dark_mode"}
               </span>
             </button>
           )}
-          <button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-caps hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 flex items-center gap-2 group">
-            Let's Chat
-            <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-          </button>
         </div>
       </div>
     </motion.header>
