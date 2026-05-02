@@ -160,7 +160,7 @@ export default function Hero() {
               products.
             </p>
           </div>
-          <div className="mt-md">
+          <div className="mt-md  md:mb-0">
             <a
               className="flex items-center gap-base text-on-background hover:text-primary transition-all group"
               href="#"
