@@ -12,66 +12,81 @@ if (typeof window !== "undefined") {
 export default function Hero() {
   const container = useRef();
 
-  useGSAP(() => {
-    const tl = gsap.timeline();
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
 
-    tl.from(".hero-text", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out",
-      delay: 0.2,
-    })
-    .from(".hero-image", {
-      scale: 0.9,
-      opacity: 0,
-      duration: 1.2,
-      ease: "expo.out",
-    }, "-=0.8")
-    .from(".hero-element", {
-      y: 30,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "power2.out",
-    }, "-=0.6");
+      tl.from(".hero-text", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+        delay: 0.2,
+      })
+        .from(
+          ".hero-image",
+          {
+            scale: 0.9,
+            opacity: 0,
+            duration: 1.2,
+            ease: "expo.out",
+          },
+          "-=0.8",
+        )
+        .from(
+          ".hero-element",
+          {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+          },
+          "-=0.6",
+        );
 
-    // Subtle parallax on floating background circles
-    gsap.to(".bg-circle-1", {
-      y: -100,
-      ease: "none",
-      scrollTrigger: {
-        trigger: container.current,
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      }
-    });
+      // Subtle parallax on floating background circles
+      gsap.to(".bg-circle-1", {
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
 
-    gsap.to(".bg-circle-2", {
-      y: -150,
-      ease: "none",
-      scrollTrigger: {
-        trigger: container.current,
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      }
-    });
-  }, { scope: container });
+      gsap.to(".bg-circle-2", {
+        y: -150,
+        ease: "none",
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+    },
+    { scope: container },
+  );
 
   return (
-    <main id="home" ref={container} className="relative min-h-screen pt-xl hero-gradient flex items-center justify-center overflow-hidden">
+    <main
+      id="home"
+      ref={container}
+      className="relative min-h-screen pt-8 md:pt-xl hero-gradient flex items-center justify-center overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="bg-circle-1 absolute top-1/4 left-10 w-64 h-64 border border-outline/10 rounded-full pointer-events-none"></div>
       <div className="bg-circle-2 absolute bottom-1/4 right-10 w-96 h-96 border border-outline/10 rounded-full pointer-events-none"></div>
-      
+
       <div className="container-max mx-auto px-margin-page grid grid-cols-1 md:grid-cols-12 gap-gutter items-center relative z-10">
         {/* Left Column */}
         <div className="md:col-span-4 flex flex-col items-start gap-md">
           <div className="space-y-sm">
-            <h1 className="font-h1 text-h1 text-on-background leading-[1.1] hero-text">
+            <h1 className="font-h1 text-5xl md:text-h1 text-on-background leading-[1.1] hero-text">
               Hi, I&apos;m <br />
               <span className="text-primary text-glow">Anait Ullah</span>
             </h1>
@@ -79,13 +94,15 @@ export default function Hero() {
               Creative Technologist
             </p>
           </div>
-          <div className="mt-md hero-element">
+          <div className="mt-2 md:mt-md hero-element">
             <button className="group flex items-center gap-base bg-primary text-on-primary px-md py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
               Hire Me
-              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                arrow_forward
+              </span>
             </button>
           </div>
-          <div className="mt-xl flex flex-col gap-sm hero-element">
+          <div className="mt-2 md:mt-xl flex flex-col gap-sm hero-element">
             <div className="flex gap-md text-on-surface-variant">
               <a className="hover:text-primary transition-colors" href="#">
                 <span className="material-symbols-outlined">public</span>
@@ -98,7 +115,7 @@ export default function Hero() {
               </a>
             </div>
             <p className="font-label-caps text-[10px] text-on-surface-variant tracking-[0.2em] uppercase">
-              www.julianvance.design
+              www.anaitullah.com
             </p>
           </div>
         </div>
@@ -120,7 +137,12 @@ export default function Hero() {
               />
               {/* Star Badge Overlay */}
               <div className="absolute top-8 right-8 bg-primary text-on-primary w-16 h-16 rounded-full flex items-center justify-center rotate-12 shadow-xl">
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: '"FILL" 1' }}>star</span>
+                <span
+                  className="material-symbols-outlined"
+                  style={{ fontVariationSettings: '"FILL" 1' }}
+                >
+                  star
+                </span>
               </div>
             </div>
           </div>
@@ -128,15 +150,28 @@ export default function Hero() {
         {/* Right Column */}
         <div className="md:col-span-4 flex flex-col items-start md:items-end text-left md:text-right gap-md hero-element">
           <div className="glass-card p-md rounded-xl max-w-96">
-            <span className="font-label-caps text-primary mb-base block uppercase">Expert on...</span>
+            <span className="font-label-caps text-primary mb-base block uppercase">
+              Expert on...
+            </span>
             <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-              Crafting high-end digital experiences at the intersection of aesthetic precision and technical innovation.
+              I build modern, scalable, and high-performance web applications
+              using the MERN stack and Next.js. Passionate about clean code,
+              responsive UI, and transforming ideas into real-world digital
+              products.
             </p>
           </div>
           <div className="mt-md">
-            <a className="flex items-center gap-base text-on-background hover:text-primary transition-all group" href="#">
-              <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary pb-1">Download CV</span>
-              <span className="material-symbols-outlined text-sm">download</span>
+            <a
+              className="flex items-center gap-base text-on-background hover:text-primary transition-all group"
+              href="https://drive.google.com/file/d/1ow3zbdBFsynCI-8S9B3cXfFwEYF4nx2i/view?usp=drive_link"
+              target="_blank"
+            >
+              <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary pb-1">
+                Download CV
+              </span>
+              <span className="material-symbols-outlined text-sm">
+                download
+              </span>
             </a>
           </div>
         </div>

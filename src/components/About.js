@@ -23,7 +23,7 @@ export default function About() {
   };
 
   return (
-    <section className="py-xl px-margin-page max-w-7xl mx-auto" id="about">
+    <section className="md:py-xl px-margin-page max-w-7xl mx-auto" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, rotate: 0 }}
@@ -64,28 +64,30 @@ export default function About() {
             className="space-y-sm font-body-md text-on-surface-variant"
           >
             <p>
-              I believe that every line of code should serve a purpose and every
-              pixel should belong. My approach combines the structural integrity
-              of computer science with the emotional resonance of luxury design.
+              Beyond writing code, I&apos;m passionate about continuous growth,
+              creativity, and meaningful collaboration. I believe great software
+              is built not just with logic, but with curiosity, empathy, and a
+              focus on solving real-world problems.
             </p>
+
             <p>
-              With 6+ years of experience in the tech industry, I&apos;ve worked
-              with startups and global brands to build platforms that don&apos;t
-              just work—they inspire.
+              I enjoy exploring new technologies, embracing challenges, and
+              thinking creatively. For me, development is about building
+              impactful experiences while continuously evolving as a developer.
             </p>
           </motion.div>
           <motion.div
             variants={itemVariants}
-            className="mt-lg grid grid-cols-2 gap-gutter"
+            className=" mt-8 md:mt-lg grid grid-cols-2 gap-gutter"
           >
             <div>
-              <span className="block text-h2 font-h2 text-primary">12+</span>
+              <span className="block text-h2 font-h2 text-primary">6+</span>
               <span className="font-label-caps text-tertiary">
                 Major Projects
               </span>
             </div>
             <div>
-              <span className="block text-h2 font-h2 text-secondary">06</span>
+              <span className="block text-h2 font-h2 text-secondary">04</span>
               <span className="font-label-caps text-tertiary">Years Exp.</span>
             </div>
           </motion.div>

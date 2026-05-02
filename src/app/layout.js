@@ -17,8 +17,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "ALEX.DEV | Digital Craftsmanship",
-  description: "Digital Craftsmanship Portfolio",
+  title:
+    "Anait Ullah - MERN Stack Developer | Next.js & React Specialist | Redux",
+  description:
+    "MERN Stack Developer | Next.js & React Specialist | Redux | Building Scalable and High-Performance Web Applications",
 };
 
 import SmoothScroll from "../components/SmoothScroll";

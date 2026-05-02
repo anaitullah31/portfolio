@@ -13,17 +13,17 @@ export default function Contact() {
   };
 
   return (
-    <section className="px-[5vw] py-xl bg-surface-container-lowest" id="contact">
+    <section className="px-[5vw] md:py-xl bg-surface-container-lowest" id="contact">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="glass-card rounded-2xl p-lg grid grid-cols-1 md:grid-cols-2 gap-xl max-w-7xl mx-auto"
+        className="glass-card rounded-2xl p-8 md:p-lg grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-xl max-w-7xl mx-auto"
       >
         <div>
           <motion.h2 variants={itemVariants} className="font-h2 text-h2 text-zinc-900 dark:text-white mb-md">
-            Let's craft something <span className="text-primary">legendary</span>.
+            Let&apos;s craft something <span className="text-primary">legendary</span>.
           </motion.h2>
           <motion.p variants={itemVariants} className="font-body-lg text-body-lg text-zinc-600 dark:text-zinc-400 mb-lg">
             Open for freelance opportunities and full-time creative collaborations. Reach out to discuss your next big idea.
@@ -43,17 +43,17 @@ export default function Contact() {
           <motion.div variants={itemVariants} className="border-b border-zinc-300 dark:border-zinc-800 pb-2 relative group">
             <label className="font-label-caps text-label-caps text-zinc-500 block mb-2 transition-colors group-focus-within:text-primary">FULL NAME</label>
             <input className="bg-transparent border-none w-full text-zinc-900 dark:text-white font-body-md focus:ring-0 outline-none placeholder:text-zinc-400 dark:placeholder:text-zinc-700" placeholder="John Doe" type="text" />
-            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-focus-within:w-full"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-focus-within:w-full"></div>
           </motion.div>
           <motion.div variants={itemVariants} className="border-b border-zinc-300 dark:border-zinc-800 pb-2 relative group">
             <label className="font-label-caps text-label-caps text-zinc-500 block mb-2 transition-colors group-focus-within:text-primary">EMAIL ADDRESS</label>
             <input className="bg-transparent border-none w-full text-zinc-900 dark:text-white font-body-md focus:ring-0 outline-none placeholder:text-zinc-400 dark:placeholder:text-zinc-700" placeholder="john@example.com" type="email" />
-            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-focus-within:w-full"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-focus-within:w-full"></div>
           </motion.div>
           <motion.div variants={itemVariants} className="border-b border-zinc-300 dark:border-zinc-800 pb-2 relative group">
             <label className="font-label-caps text-label-caps text-zinc-500 block mb-2 transition-colors group-focus-within:text-primary">MESSAGE</label>
             <textarea className="bg-transparent border-none w-full text-zinc-900 dark:text-white font-body-md focus:ring-0 outline-none placeholder:text-zinc-400 dark:placeholder:text-zinc-700 resize-none" placeholder="Tell me about your project..." rows={3}></textarea>
-            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-focus-within:w-full"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-focus-within:w-full"></div>
           </motion.div>
           <motion.button 
             variants={itemVariants}
