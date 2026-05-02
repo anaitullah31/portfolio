@@ -163,9 +163,10 @@ export default function Hero() {
           <div className="mt-md">
             <a
               className="flex items-center gap-base text-on-background hover:text-primary transition-all group"
-              href="https://drive.google.com/file/d/1ow3zbdBFsynCI-8S9B3cXfFwEYF4nx2i/view?usp=drive_link"
+              href="#"
               target="_blank"
             >
+              {/* https://drive.google.com/file/d/1ow3zbdBFsynCI-8S9B3cXfFwEYF4nx2i/view?usp=drive_link */}
               <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary pb-1">
                 Download CV
               </span>

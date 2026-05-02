@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="px-[5vw] md:py-xl bg-surface-container-lowest" id="contact">
+    <section className="px-[5vw] py-16 md:py-xl bg-surface-container-lowest" id="contact">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
