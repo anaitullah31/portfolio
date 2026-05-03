@@ -23,7 +23,7 @@ export default function Projects() {
       >
         <div>
           <span className="font-label-caps text-primary mb-sm block">04 / WORK</span>
-          <h2 className="font-h2 text-4xl md:text-h2">Selected Works</h2>
+          <h2 className="font-h2 text-2xl md:text-h2">Selected Works</h2>
         </div>
         <button className="font-label-caps text-secondary flex items-center gap-2 group hover:gap-4 transition-all">
           All Projects

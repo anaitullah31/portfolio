@@ -13,7 +13,7 @@ export default function Skills() {
   };
 
   return (
-    <section className="py-xl bg-surface-dim px-margin-page" id="skills">
+    <section className="py-24 md:py-xl bg-surface-dim px-margin-page" id="skills">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -30,8 +30,8 @@ export default function Skills() {
             Quantitative measurement of technical mastery based on real-world project deployment.
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-xl">
-          <div className="space-y-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-md md:gap-xl">
+          <div className="space-y-md md:space-y-lg">
             <motion.div variants={itemVariants} className="group">
               <div className="flex justify-between font-label-caps mb-2">
                 <span>Core Engineering</span>
@@ -63,7 +63,7 @@ export default function Skills() {
               </div>
             </motion.div>
           </div>
-          <div className="space-y-lg">
+          <div className="space-y-md md:space-y-lg">
             <motion.div variants={itemVariants} className="group">
               <div className="flex justify-between font-label-caps mb-2">
                 <span>UI/UX Implementation</span>

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -95,12 +96,12 @@ export default function Hero() {
             </p>
           </div>
           <div className="mt-2 md:mt-md hero-element">
-            <button className="group flex items-center gap-base bg-primary text-on-primary px-md py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
+            <Link href="https://www.linkedin.com/in/anaitullah/" target="_blank" className="group flex items-center gap-base bg-primary text-on-primary px-3 md:px-md py-2 md:py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
               Hire Me
               <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                 arrow_forward
               </span>
-            </button>
+            </Link>
           </div>
           <div className="mt-2 md:mt-xl flex flex-col gap-sm hero-element">
             <div className="flex gap-md text-on-surface-variant">
@@ -160,7 +161,7 @@ export default function Hero() {
               products.
             </p>
           </div>
-          <div className="mt-md  md:mb-0">
+          <div className="mt-md mb-md">
             <a
               className="flex items-center gap-base text-on-background hover:text-primary transition-all group"
               href="#"

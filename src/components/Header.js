@@ -44,7 +44,7 @@ export default function Header() {
     >
       <div className="flex justify-between items-center py-4 max-w-7xl mx-auto font-sans tracking-tight">
         <div className="text-xl font-bold tracking-tighter text-on-background uppercase">
-          {theme === "dark" ? (
+          {/* {theme === "dark" ? (
             <Image
               src="/logo-light.png"
               alt="logo"
@@ -62,7 +62,8 @@ export default function Header() {
               className="w-full h-full object-cover dark:grayscale dark:contrast-125"
               priority
             />
-          )}
+          )} */}
+          <h3>Anait </h3>
         </div>
         <nav className="hidden md:flex gap-8 items-center">
           {links.map((link) => (
