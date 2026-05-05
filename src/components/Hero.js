@@ -96,7 +96,11 @@ export default function Hero() {
             </p>
           </div>
           <div className="mt-2 md:mt-md hero-element">
-            <Link href="https://www.linkedin.com/in/anaitullah/" target="_blank" className="group flex items-center gap-base bg-primary text-on-primary px-3 md:px-md py-2 md:py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]">
+            <Link
+              href="https://www.linkedin.com/in/anaitullah/"
+              target="_blank"
+              className="group flex items-center gap-base bg-primary text-on-primary px-3 md:px-md py-2 md:py-sm rounded-full font-label-caps transition-all hover:pr-lg hover:shadow-[0_0_30px_rgba(255,114,98,0.4)]"
+            >
               Hire Me
               <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                 arrow_forward
@@ -164,10 +168,9 @@ export default function Hero() {
           <div className="mt-md mb-md">
             <a
               className="flex items-center gap-base text-on-background hover:text-primary transition-all group"
-              href="#"
+              href="https://drive.google.com/file/d/16Ywu44SeZLN4SvJdBCHRc4Q1zFER2Bo5/view?usp=sharing"
               target="_blank"
             >
-              {/* https://drive.google.com/file/d/1ow3zbdBFsynCI-8S9B3cXfFwEYF4nx2i/view?usp=drive_link */}
               <span className="font-label-caps text-label-caps uppercase border-b border-outline/50 group-hover:border-primary pb-1">
                 Download CV
               </span>
