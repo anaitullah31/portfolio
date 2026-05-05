@@ -36,7 +36,7 @@ export default function Footer() {
           variants={itemVariants}
           className="font-sans text-xs tracking-widest uppercase text-gray-500"
         >
-          © 2024 DIGITAL CRAFTSMANSHIP. ALL RIGHTS RESERVED.
+          © 2026 DIGITAL CRAFTSMANSHIP. ALL RIGHTS RESERVED.
         </motion.div>
         <motion.div variants={itemVariants} className="flex gap-8">
           {socials.map((social) => (
